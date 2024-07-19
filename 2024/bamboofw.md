@@ -65,3 +65,27 @@ Repository of the Ansible playbook to install bamboo firewall on Rocky linux for
 
 ![ipsetgrep](./files/ipset-grep.png)
 ![ipset detail](./files/ipset-detail.png)
+
+## Update new version of calico
+
+- Calicoctl version: 3.28.0
+
+![Calicoctl version](./files/calico-version.png)
+
+- Calico felix version: 3.28.0, release file: [pngocthach/calico](https://github.com/pngocthach/calico/releases/download/v0.0.2/calico-felix-amd64.tar.gz)
+
+![Calico felix version](./files/felix-version.png)
+
+- Etcd version: 3.5.14
+
+![Etcd version](./files/etcd-version.png)
+
+### Issues
+
+- Missing libpcap
+
+![Missing libpcap](./files/missing-libpcap.png)
+
+### Result
+
+- All functions run normally
