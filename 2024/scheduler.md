@@ -7,3 +7,7 @@
 ![image](https://github.com/user-attachments/assets/e6b5fefa-9ea3-45c1-8c8d-94eb48dd4c33)
 Metric is recorded asynchronously
 ![image](https://github.com/user-attachments/assets/c384d5e4-f2e3-428b-ad17-9312ed1b3c44)
+
+**Cache**
+State Machine of a pod's events in scheduler's cache:
+![image](https://github.com/user-attachments/assets/7b97508d-9f94-4d5c-b0ae-59e9eeb032a5)
