@@ -92,3 +92,20 @@ A Kubernetes cluster consists of two main components:
 - kubelet: Ensures that containers are running as specified in the configuration.
 - kube-proxy: Manages network services and routes traffic to pods.
 - Container runtime: The software responsible for running containers, such as Docker or containerd.
+
+# Kubenetes components
+![image](https://github.com/user-attachments/assets/edf77828-2c93-40bc-8a7f-084acf86624f)
+
+# Create Pod Flow
+![image](https://github.com/user-attachments/assets/aff33968-545e-4b6d-971e-68dd9e81e46c)
+1. kubectl writes to the API Server.
+2. API Server validates the request and persists it to etcd.
+3. etcd notifies back the API Server.
+4. API Server invokes the Scheduler.
+5. Scheduler decides where to run the pod on and return that to the API Server.
+6. API Server persists it to etcd.
+7. etcd notifies back the API Server.
+8. API Server invokes the Kubelet in the corresponding node.
+9. Kubelet talks to the Docker daemon using the API over the Docker socket to create the container.
+10. Kubelet updates the pod status to the API Server.
+11. API Server persists the new state in etcd.
